@@ -1,0 +1,86 @@
+:root {
+    --mouse-pointer : pointer;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #0f79db;
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+}
+
+header {
+    padding: 0 35px;
+    grid-area: header;
+    background-color: #BFD7ED;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #60A3D9;
+    padding: 10px 0;
+    width: 8vw;
+    transition: width 400ms;
+}
+
+aside:hover {
+    width: 15vw;
+}
+
+aside nav {
+    margin: 0 0 20px 10px;
+    cursor: var(--mouse-pointer);
+}
+
+main {
+    grid-area: main;
+    background-color: #0074B7;
+}
+
+main p{
+    margin: 30px;
+}
+
+main h1 {
+    margin: 30px;
+    text-align: center;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: #003B73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    display: inline-flex;
+    align-: center;
+    cursor: var(--mouse-pointer);
+}
+
+.logo p {
+    margin: 15px;
+}
+
+span {
+    margin-left: 10px;
+    cursor: var(--mouse-pointer);
+}
+
+
